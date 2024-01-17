@@ -1,0 +1,445 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background: #000;
+}
+
+.main {
+    color: white;
+    background: #000;
+    padding: 0;
+    margin: 0;
+    font-family: General Sans, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
+}
+
+.FollowUpCircle {
+    opacity: 100%;
+    position: absolute;
+    z-index: 100;
+    color: #000;
+    width: 1vw;
+    height: 1vw;
+    border-radius: 50%;
+    background: white;
+    transition: all 0.1s ease-out;
+    visibility: hidden;
+    transform: var(--circle);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5vw;
+    mix-blend-mode: difference;
+    /* Use the custom property */
+}
+
+::selection {
+    background: rgba(176, 27, 27, 0.545);
+    color: white;
+
+}
+
+/* link border animation */
+
+.landingpage {
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+    text-transform: uppercase;
+
+}
+
+.psudoheader {
+    width: 100vw;
+    height: 2.5vh;
+    background: #000;
+}
+
+.header1 {
+    /* background: rgba(255, 0, 0, 0.358); */
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #000;
+    position: fixed;
+    z-index: 5;
+    margin-top: -2.5vh;
+}
+
+.ultop {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    list-style-type: none;
+    position: absolute;
+
+}
+
+.visibleme {
+
+    visibility: visible;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    list-style-type: none;
+    position: absolute;
+    transition: visibility 1s ease-in;
+}
+
+.hideme {
+    visibility: hidden;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    list-style-type: none;
+    position: absolute;
+}
+
+.ultop a {
+    text-decoration: none;
+    color: white;
+    padding: 0 2vw;
+}
+
+#menu:hover {
+    cursor: pointer;
+
+}
+
+.hidemenu {
+    visibility: hidden;
+}
+
+.header1 h4 {
+
+    padding: 2.5vw;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.header1 h4 a {
+    text-transform: capitalize;
+    text-decoration: none;
+    color: white;
+    width: 0px;
+    transition: all 0.3s;
+}
+
+.header1 h4 a::after {
+    content: '';
+    width: 0px;
+    height: 22px;
+    padding: 0px;
+    margin: 0px;
+    margin-left: -130px;
+    position: absolute;
+    opacity: 100%;
+    z-index: 55;
+    border-bottom: 1px solid white;
+    transition: width 0.3s ease-in;
+    /* Use transition instead of animation */
+}
+
+.header1 h4 a:hover::after {
+    width: 130px;
+    /* Increase the width on hover */
+}
+
+.heroland {
+    padding-left: 3vw;
+    margin-top: 20vh;
+}
+
+.textanimdiv {
+    /* border: 2px solid red; */
+    overflow: hidden;
+}
+
+.h1anim {
+    transform: translateY(100%);
+}
+
+.animindia {
+    /* border: 2px solid red; */
+    overflow: hidden;
+}
+
+.movedown {
+    transform: translatey(-100%);
+}
+
+.heroland h1 {
+    font-size: 11vw;
+    line-height: 0.9;
+    font-weight: 600;
+    opacity: 70%;
+}
+
+
+.combinetext {
+    display: inline-block;
+    padding-left: 9.8vw;
+}
+
+.combinetext h4 {
+    line-height: 3;
+    font-weight: 600;
+    display: flex;
+    justify-content: end;
+}
+
+.rightbottomtext {
+    margin-top: 10vh;
+    padding-right: 3vw;
+
+}
+
+.rightbottomtext h4 {
+    display: flex;
+    justify-content: end;
+    line-height: 2;
+    font-weight: 600;
+}
+
+
+
+.footer1 {
+    padding: 0vw 3vw;
+    padding-top: 5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer1 a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer1 a img {
+    filter: invert();
+    width: 0.8em;
+    padding-left: 5px;
+    rotate: -25deg;
+    transition: rotate 0.1s ease-in;
+}
+
+.footer1 a:hover img {
+    rotate: 0deg;
+}
+
+.minicircles {
+    display: flex;
+}
+
+.circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: .5vw;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    background: rgb(111, 110, 110);
+    overflow: hidden;
+   
+}
+.hideArrow{
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+
+.circle img {
+    /* filter: invert(); */
+    width: 1em;
+    transition: transform .3s ease;
+}
+
+
+
+/* style for plugpage below*/
+
+.plugpage {
+    width: 100vw;
+    background: #000;
+    padding-top: 10vw;
+}
+
+.plugpage a {
+    text-decoration: none;
+    color: white;
+}
+
+.plugdivs {
+    text-decoration: none;
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3vw;
+    padding-left: 0px;
+    margin-left: 3vw;
+    border-top: 2px solid grey;
+    text-transform: uppercase;
+}
+
+.plugdivs h1 {
+    font-size: 6vw;
+    opacity: 70%;
+}
+
+.plugdivs img {
+    width: 35vw;
+    position: absolute;
+    visibility: hidden;
+    z-index: 2;
+   
+    transition: transform .3s ease;
+}
+
+.aboutpage {
+    width: 100vw;
+    background: #000;
+    padding-top: 20vw;
+    padding-bottom: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.imgdiv {
+    display: flex;
+    width: 30vw;
+    height: 30vw;
+    overflow: hidden;
+
+}
+
+.imgdiv img {
+    filter: brightness(80%) contrast(115%);
+
+}
+
+.textabout {
+    width: 35vw;
+
+}
+
+.textabout h5 {
+    opacity: 50%;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+
+.textabout p {
+    font-size: 0.8em;
+    line-height: 2;
+
+}
+
+.textabout a {
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+    font-size: 1.3em;
+ 
+}
+
+.textabout a h6 {
+    display: inline-block;
+    padding: .5em 1.8em;
+    margin-top: 2em;
+    opacity: 100%;
+    border: 1.4px solid white;
+    border-radius: 100px;
+    font-weight: 100;
+}
+
+.linkchannel {
+    width: 100vw;
+    background: #000;
+    text-transform: uppercase;
+    line-height: 1.7;
+}
+
+.linkchannel h5 {
+    opacity: 50%;
+    padding: 0vw 3vw;
+    font-weight: 100;
+}
+
+.linkchannel a {
+    text-decoration: none;
+    color: white;
+    padding: 0vw 3vw;
+}
+
+.linkchannel a img {
+    filter: invert();
+    width: 0.8em;
+    padding-left: 5px;
+    rotate: -25deg;
+    transition: rotate 0.1s ease-in;
+}
+
+.linkchannel a:hover img {
+    rotate: 0deg;
+}
+
+.footer2 {
+    background: #000;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: uppercase;
+    padding-top: 15vh;
+    padding-bottom: 2vh;
+}
+
+.footer2 h5 {
+    font-size: large;
+    font-weight: 500;
+    padding: 0vw 3vw;
+    padding-bottom: 0vw;
+    display: inline-block;
+}
+
+.date {
+    display: inline-block;
+    font-size: large;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+
+}
+
+.right {
+    display: flex;
+    align-items: center;
+
+}
+
+.ulbottom {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+.ulbottom a {
+    text-decoration: none;
+    color: white;
+    padding: 0 2vw;
+}
