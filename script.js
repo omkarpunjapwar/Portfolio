@@ -32,9 +32,12 @@ gsap.from(".footer1", {
 
 // onclick menu list shower
 var menuelement = document.getElementById("menu");
-var listElement = document.querySelector(".visibleme");
+// var listElement = document.querySelector(".visibleme");
 var listElement = document.querySelector(".hideme");
 menuelement.onclick = function () {
+  listElement.style.opacity = 1;
+  menuelement.style.opacity = 1;
+
   listElement.classList.toggle("hideme");
   gsap.from(".visibleme", {
     delay: 0,
@@ -43,6 +46,26 @@ menuelement.onclick = function () {
     ease: Power1.easeInOut,
   });
   menuelement.classList.toggle("hidemenu");
+  setTimeout(() => {
+    gsap.to(".visibleme", {
+      delay: 0,
+      opacity: 0,
+      duration: 0.8,
+      ease: Power1.easeInOut,
+    });
+
+    listElement.classList.toggle("hideme");
+
+    menuelement.style.opacity = 0;
+
+    gsap.to(menuelement, {
+      delay: 0.3,
+      opacity: 1,
+      duration: 0.8,
+      ease: Power1.easeInOut,
+    });
+    menuelement.classList.toggle("hidemenu");
+  }, 10000);
 };
 
 // Mouse Follower Circle
@@ -62,7 +85,7 @@ function MouseFollower() {
 }
 MouseFollower();
 
-//image shower on hover
+// image shower on hover
 
 function ShowImage() {
   const plugDiv1 = document.getElementById("plugDiv1");
@@ -157,23 +180,36 @@ function imageFollow() {
 
   imageDiv.forEach((div) => {
     div.addEventListener("mouseenter", (chai) => {
-      console.log("workingggg!");
+      // console.log("workingggg!");
       const mouseX = chai.clientX - main.getBoundingClientRect().left;
       const mouseY = chai.clientY - main.getBoundingClientRect().top;
       console.log(mouseX);
       console.log(mouseY);
-     
-image.forEach((image)=>{
- 
-   // Adjust the offsets to ensure the image stays within the visible boundaries
-   const offsetX = Math.min(Math.max(mouseX, 0), div.clientWidth - image.clientWidth);
-   const offsetY = Math.min(Math.max(mouseY, 0), div.clientHeight - image.clientHeight);
 
-   image.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
-console.log("huhuuu");
-});
+      image.forEach((image) => {
+        // Adjust the offsets to ensure the image stays within the visible boundaries
+        const offsetX = Math.min(
+          Math.max(mouseX, 0),
+          div.clientWidth - image.clientWidth
+        );
+        const offsetY = Math.min(
+          Math.max(mouseY, 0),
+          div.clientHeight - image.clientHeight
+        );
 
+        // image.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
+        gsap.to(image, {
+          x: offsetX,
+          y: offsetY,
+          duration: 0.3,
+          ease: "power2.out",
+        });
+        // console.log("huhuuu");
+      });
     });
   });
 }
+
 imageFollow();
+
+
