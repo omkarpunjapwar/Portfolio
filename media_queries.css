@@ -1,6 +1,6 @@
 /* This css is for responsiveness */
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   * {
     outline: 1px solid red;
   }
