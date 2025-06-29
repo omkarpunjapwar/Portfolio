@@ -1,7 +1,6 @@
 /* This css is for responsiveness */
 
 @media (max-width: 600px) {
-
   .FollowUpCircle {
     display: none;
   }
@@ -64,6 +63,10 @@
 
   .plugdivs {
     width: 90vw;
+  }
+
+  .plugdivs img {
+    display: none;
   }
 
   .aboutpage {

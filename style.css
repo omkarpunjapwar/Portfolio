@@ -285,6 +285,17 @@ body {
 .plugdivs h1 {
   font-size: 6vw;
   opacity: 70%;
+  transition: all 0.8s ease;
+}
+
+.plugdivs:hover h1 {
+  transform: translateX(70px);
+  opacity: 0.1;
+}
+
+.plugdivs:hover h6 {
+  opacity: 0.3;
+  transition: all 0.8s ease;
 }
 
 .plugdivs img {
@@ -292,7 +303,7 @@ body {
   position: absolute;
   visibility: hidden;
   z-index: 2;
-
+  border-radius: 5%;
   transition: transform 0.3s ease;
 }
 
@@ -348,8 +359,13 @@ body {
   border: 1.4px solid white;
   border-radius: 100px;
   font-weight: 100;
+  transition: all 0.3s ease;
 }
+.textabout a h6:hover{
+background-color: white;
+color: black;
 
+}
 .linkchannel {
   width: 100vw;
   background: #000;
