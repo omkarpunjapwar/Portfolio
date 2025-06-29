@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
 }
+
 body {
   background: #000;
 }
@@ -79,7 +80,6 @@ body {
   position: absolute;
 }
 
-
 .visibleme {
   visibility: visible;
   width: 100vw;
@@ -100,7 +100,6 @@ body {
   list-style-type: none;
   position: absolute;
   transition: visibility 1s ease-out;
-
 }
 
 .ultop a {
@@ -115,7 +114,6 @@ body {
 
 .hidemenu {
   visibility: hidden;
- 
 }
 
 .header1 h4 {
@@ -228,9 +226,9 @@ body {
 }
 
 .footer1 a:hover img,
-.footer1 a:active img{
+.footer1 a:active img {
   rotate: 0deg;
-} 
+}
 
 .minicircles {
   display: flex;
@@ -317,6 +315,7 @@ body {
 
 .imgdiv img {
   filter: brightness(80%) contrast(115%);
+  max-width: 100%;
 }
 
 .textabout {
@@ -378,7 +377,7 @@ body {
   transition: rotate 0.1s ease-in;
 }
 
-.linkchannel a:hover img ,
+.linkchannel a:hover img,
 .linkchannel a:active img {
   rotate: 0deg;
 }
