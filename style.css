@@ -289,7 +289,7 @@ body {
 }
 
 .plugdivs:hover h1 {
-  transform: translateX(70px);
+  transform: translateX(60px);
   opacity: 0.1;
 }
 
