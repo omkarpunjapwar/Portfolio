@@ -141,8 +141,8 @@ MakeCircleBig();
 
 const circleMini = document.querySelectorAll(".circle");
 const Arrow = document.querySelectorAll(".circle img");
-console.log(circleMini);
-console.log(Arrow);
+// console.log(circleMini);
+// console.log(Arrow);
 
 function miniCirclesArrowAnimation() {
   circleMini.forEach((circle) => {
@@ -183,8 +183,8 @@ function imageFollow() {
       // console.log("workingggg!");
       const mouseX = chai.clientX - main.getBoundingClientRect().left;
       const mouseY = chai.clientY - main.getBoundingClientRect().top;
-      console.log(mouseX);
-      console.log(mouseY);
+      // console.log(mouseX);
+      // console.log(mouseY);
 
       image.forEach((image) => {
         // Adjust the offsets to ensure the image stays within the visible boundaries
