@@ -1,151 +1,150 @@
 /* This css is for responsiveness */
 
-@media (max-width:600px) {
-    .FollowUpCircle {
-        display: none;
-    }
+@media (max-width: 600px) {
+  * {
+    outline: 1px solid red;
+  }
+  .FollowUpCircle {
+    display: none;
+  }
 
-    .ultop {
-        width: 80vw;
-        margin-top: 0.3em;
-    }
+  .ultop {
+    width: 80vw;
+    margin-top: 0.3em;
+  }
 
-    .ultop li {
-        font-size: 10px;
-    }
+  .ultop li {
+    font-size: 10px;
+  }
 
-    .nav a {
-        font-size: small;
+  .nav a {
+    font-size: small;
+  }
 
-    }
+  #hideUltop {
+    display: none;
+  }
 
-    #hideUltop {
-        display: none;
-    }
+  #menu {
+    font-size: small;
+    margin-top: 0.4em;
+  }
 
-    #menu {
-        font-size: small;
-        margin-top: 0.4em;
-    }
+  .rightbottomtext {
+    margin-top: 12em;
+    font-size: small;
+  }
 
-    .rightbottomtext {
-        margin-top: 12em;
-        font-size: small;
-    }
+  .footer1 {
+    font-size: small;
+    margin-top: 15em;
+  }
 
-    .footer1 {
-        font-size: small;
-        margin-top: 15em;
-    }
+  .footer1 a {
+    width: 11em;
+  }
 
-    .footer1 a {
-        width: 11em;
-    }
+  .heroland h1 {
+    font-size: 15vw;
+  }
 
-    .heroland h1 {
-        font-size: 15vw;
-    }
+  .animindia {
+    font-size: small;
+  }
 
-    .animindia {
-        font-size: small;
-    }
+  .circle {
+    display: none;
+  }
 
+  #club_text {
+    margin-left: 6.2em;
+  }
 
-    .circle {
-        display: none;
-    }
+  .plugpage {
+    padding-top: 8em;
+  }
 
-    #club_text {
-        margin-left: 6.2em;
-    }
+  .plugdivs {
+    width: 90vw;
+  }
 
-    .plugpage {
-        padding-top: 8em;
-    }
+  .aboutpage {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0.7em;
+    margin-top: 5em;
+  }
 
-    .plugdivs {
-        width: 90vw;
-    }
+  .imgdiv {
+    width: 15em;
+    height: 15em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
 
-    .aboutpage {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding-left: 0.7em;
-        margin-top: 5em;
-    }
+  .imgdiv img {
+    width: 30em;
+    position: absolute;
+  }
 
-    .imgdiv {
-        width: 15em;
-        height: 15em;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        overflow: hidden;
-    }
+  .textabout {
+    margin-top: 1em;
+    width: 90vw;
+  }
 
-    .imgdiv img {
-        width: 30em;
-        position: absolute;
-    }
+  .textabout h5 {
+    font-size: xx-small;
+  }
 
-    .textabout {
-        margin-top: 1em;
-        width: 90vw;
-    }
+  .textabout p {
+    font-size: 0.6em;
+    word-spacing: 0.1em;
+  }
 
-    .textabout h5 {
-        font-size: xx-small;
+  .textabout a h6 {
+    font-size: 0.4em;
+  }
 
-    }
+  .linkchannel {
+    margin-top: 3em;
+    line-height: 1.3;
+  }
 
-    .textabout p {
-        font-size: 0.6em;
-        word-spacing: 0.1em;
-    }
+  .linkchannel a {
+    font-size: small;
+  }
 
-    .textabout a h6 {
-        font-size: 0.4em;
-    }
+  .linkchannel h5 {
+    font-size: 0.5em;
+  }
 
-    .linkchannel {
-        margin-top: 3em;
-        line-height: 1.3;
-    }
+  .footer2 {
+    flex-direction: column-reverse;
+    align-items: start;
+    line-height: 3;
+    padding-top: 8vh;
+    padding-bottom: 0;
+    font-size: xx-small;
+    font-weight: 100;
+    margin-top: 2.8em;
+  }
 
-    .linkchannel a {
-        font-size: small;
+  .date {
+    align-items: start;
+    font-size: x-small;
+  }
 
-    }
+  .left h5 {
+    font-size: x-small;
+    font-weight: 300;
+    padding-left: 2vw;
+  }
 
-    .linkchannel h5 {
-        font-size: .5em;
-    }
-
-    .footer2 {
-        flex-direction: column-reverse;
-        align-items: start;
-        line-height: 3;
-        padding-top: 8vh;
-        padding-bottom: 0;
-        font-size: xx-small;
-        font-weight: 100;
-        margin-top: 2.8em;
-    }
-
-    .date {
-        align-items: start;
-        font-size: x-small;
-    }
-
-    .left h5 {
-        font-size: x-small;
-        font-weight: 300;
-        padding-left: 2vw;
-    }
-
-    .ulbottom {
-        width: 80vw;
-        justify-content: space-between;
-    }
+  .ulbottom {
+    width: 80vw;
+    justify-content: space-between;
+  }
 }
