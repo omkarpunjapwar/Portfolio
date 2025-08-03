@@ -68,7 +68,7 @@ body {
   position: fixed;
   z-index: 5;
   margin-top: -2.5vh;
-  padding: 1em em;
+  /* padding: 1em 0em; */
 }
 
 .ultop {
@@ -232,6 +232,7 @@ body {
 
 .minicircles {
   display: flex;
+  visibility: hidden;
 }
 
 .circle {
@@ -310,8 +311,10 @@ body {
 .aboutpage {
   width: 100vw;
   background: #000;
-  padding-top: 20vw;
-  padding-bottom: 10vw;
+  /* padding-top: 20vw;
+  padding-bottom: 10vw; */
+  margin-top: 15em;
+  margin-bottom: 6em;
   display: flex;
   justify-content: center;
   align-items: center;

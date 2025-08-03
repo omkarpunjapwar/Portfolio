@@ -65,7 +65,7 @@ menuelement.onclick = function () {
       ease: Power1.easeInOut,
     });
     menuelement.classList.toggle("hidemenu");
-  }, 10000);
+  }, 50000);
 };
 
 // Mouse Follower Circle
@@ -211,5 +211,18 @@ function imageFollow() {
 }
 
 imageFollow();
+
+// To make menue buttons work
+
+document.querySelector('a[href="#contact"]').addEventListener('click', function (e) {
+  e.preventDefault();
+  const target = document.querySelector('#contact');
+  scroll.scrollTo(target);
+});
+
+
+
+
+
 
 
