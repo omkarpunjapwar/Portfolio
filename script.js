@@ -214,15 +214,52 @@ imageFollow();
 
 // To make menue buttons work
 
-document.querySelector('a[href="#contact"]').addEventListener('click', function (e) {
+document
+  .querySelector('a[href="#contact"]')
+  .addEventListener("click", function (e) {
+    e.preventDefault();
+    const target = document.querySelector("#contact");
+    scroll.scrollTo(target);
+  });
+
+
+// contact form js
+//
+//
+// Close button functionality
+// 
+// Grab elements
+
+const contactForm = document.getElementById("contactForm");
+const contactNav = document.getElementById("contactNav");
+const closeBtn = document.getElementById("closeFormBtn");
+const form = document.getElementById("myForm");
+
+// Show the form smoothly
+contactNav.addEventListener("click", (e) => {
   e.preventDefault();
-  const target = document.querySelector('#contact');
-  scroll.scrollTo(target);
+  contactForm.style.display = "flex";
+   document.body.style.overflow = "hidden"; // 🔒 disable scroll
+  setTimeout(() => {
+    contactForm.classList.add("show");
+  }, 10);
 });
 
+// Hide the form smoothly
+function closeFormSmoothly() {
+  contactForm.classList.remove("show");
+   document.body.style.overflow = "auto"; // allow scroling
+  setTimeout(() => {
+    contactForm.style.display = "none";
+  }, 500); // match CSS transition time
+}
 
+// Close form when clicking the close button
+closeBtn.addEventListener("click", closeFormSmoothly);
 
-
-
-
-
+// Hide after submitting
+form.addEventListener("submit", function () {
+  setTimeout(() => {
+    closeFormSmoothly();
+  }, 1000); // after sending
+});

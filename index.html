@@ -30,7 +30,7 @@
                         <li><a href="#">Projects</a></li>
                         <li><a href="#">experience</a></li>
                         <li><a href="#contact" class="scroll-to-about">about</a></li>
-                        <li><a href="#">contact</a></li>
+                        <li><a href="#"  id="contactNav" >contact</a></li>
                     </ul>
                 </div>
  
@@ -126,14 +126,35 @@ And yeah, I genuinely enjoy making sense of the chaos — it’s my kind of fun.
             </div>
             <div class="right">
                 <ul class="ulbottom">
-                    <li><a href="linkedin.com">linkedin</a></li>
-                    <li><a href="instagram.com">twitter</a></li>
-                    <li><a href="twitter.com">resume</a></li>
+                    <li><a target="_blank" href="https://www.linkedin.com/in/omkar-punjapwar">linkedin</a></li>
+                    <li><a target="_blank" href="https://x.com/home">twitter</a></li>
+                    <li><a target="_blank" href="images/My_resume.pdf">resume</a></li>
                     
                 </ul>
             </div>
         </div>
+        
+<div id="contactForm">
+    
+
+<form id="myForm" action="https://formspree.io/f/mldlovdz" method="POST">
+<div class="close-btn" id="closeFormBtn">close</div>
+  <label for="name">Name:</label>
+  <input type="text" name="name" required><br>
+
+  <label for="email">Email:</label>
+  <input type="email" name="email" required><br>
+
+  <label for="message">Message:</label>
+  <textarea name="message" required></textarea><br>
+
+  <button type="submit">Send Message</button>
+</form>
+</div>
     </div>
+
+
+
 
     <!-- ----GSAP CDN---- -->
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"
