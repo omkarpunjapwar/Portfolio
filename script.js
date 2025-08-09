@@ -226,11 +226,12 @@ document
 // contact form js
 //
 //
-// Close button functionality
 // 
-// Grab elements
+// 
+//
 
 const contactForm = document.getElementById("contactForm");
+const talkButt = document.getElementById("let'sTalk");
 const contactNav = document.getElementById("contactNav");
 const closeBtn = document.getElementById("closeFormBtn");
 const form = document.getElementById("myForm");
@@ -239,7 +240,13 @@ const form = document.getElementById("myForm");
 contactNav.addEventListener("click", (e) => {
   e.preventDefault();
   contactForm.style.display = "flex";
-   document.body.style.overflow = "hidden"; // 🔒 disable scroll
+  setTimeout(() => {
+    contactForm.classList.add("show");
+  }, 10);
+});
+talkButt.addEventListener("click", (e) => {
+  e.preventDefault();
+  contactForm.style.display = "flex";
   setTimeout(() => {
     contactForm.classList.add("show");
   }, 10);
@@ -248,7 +255,6 @@ contactNav.addEventListener("click", (e) => {
 // Hide the form smoothly
 function closeFormSmoothly() {
   contactForm.classList.remove("show");
-   document.body.style.overflow = "auto"; // allow scroling
   setTimeout(() => {
     contactForm.style.display = "none";
   }, 500); // match CSS transition time
