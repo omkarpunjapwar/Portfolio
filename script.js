@@ -222,12 +222,11 @@ document
     scroll.scrollTo(target);
   });
 
-
 // contact form js
 //
 //
-// 
-// 
+//
+//
 //
 
 const contactForm = document.getElementById("contactForm");
@@ -268,4 +267,18 @@ form.addEventListener("submit", function () {
   setTimeout(() => {
     closeFormSmoothly();
   }, 1000); // after sending
+});
+
+// Js for water-Ripple effect
+
+$(document).ready(function () {
+  $(".main").ripples({
+    // resolution: 512,     // Quality of ripple
+    // dropRadius: 20,      // Radius of ripple in px
+    // perturbance: 0.04,   // Wave distortion (lower = calmer water)
+
+    resolution: 720,
+    dropRadius: 20,
+    perturbance: 0.04,
+  });
 });
