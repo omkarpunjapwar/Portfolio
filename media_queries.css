@@ -78,17 +78,17 @@
   }
 
   .imgdiv {
-    width: 15em;
+    width: 10em;
     height: 15em;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    /* border: solid; */
   }
 
   .imgdiv img {
-    width: 30em;
-    position: absolute;
+    width: 10em;
     max-width: 100%;
   }
 
