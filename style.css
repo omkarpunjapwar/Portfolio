@@ -246,6 +246,7 @@ body {
   background: rgb(111, 110, 110);
   overflow: hidden;
 }
+
 .hideArrow {
   opacity: 0;
   pointer-events: none;
@@ -322,14 +323,17 @@ body {
 
 .imgdiv {
   display: flex;
-  width: 30vw;
-  height: 30vw;
+  width: 13vw;
+  height: 20vw;
   overflow: hidden;
+  border-radius: 1em;
+  margin-right: 7vw;
+  margin-left: 4vw;
 }
 
 .imgdiv img {
-  filter: brightness(80%) contrast(115%);
-  max-width: 100%;
+  filter: brightness(80%) contrast(110%);
+  /* max-width: 100%; */
 }
 
 .textabout {
@@ -364,10 +368,12 @@ body {
   font-weight: 100;
   transition: all 0.3s ease;
 }
+
 .textabout a h6:hover {
   background-color: white;
   color: black;
 }
+
 .linkchannel {
   width: 100vw;
   /* background: #000; */
@@ -450,7 +456,7 @@ body {
 
 /* Outer blur background */
 #contactForm {
- 
+
   position: fixed;
   top: 0;
   left: 0;
@@ -462,10 +468,12 @@ body {
   justify-content: center;
   align-items: center;
   z-index: 6;
-  display: none; /* hide it initially */
+  display: none;
+  /* hide it initially */
   opacity: 0;
   transition: opacity 0.5s ease;
 }
+
 #contactForm.show {
   display: flex;
   opacity: 1;
@@ -483,7 +491,7 @@ body {
   flex-direction: column;
   gap: 10px;
   font-family: 'Poppins', sans-serif;
-position: fixed;
+  position: fixed;
 }
 
 /* Form Elements */
@@ -499,7 +507,8 @@ position: fixed;
   resize: none;
   outline: none;
 }
-#contactForm form textarea{
+
+#contactForm form textarea {
   height: 10em;
   scrollbar-width: none;
   font-size: large;
@@ -539,3 +548,8 @@ position: fixed;
   z-index: 999;
 }
 
+.main {
+  filter: url(#water);
+}
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1"><filter id="water"><feTurbulence id="turbulence" baseFrequency="0.02 0.04" numOctaves="3" seed="2" /><feDisplacementMap in="SourceGraphic" scale="20" /><animate xlink:href="#turbulence" attributeName="baseFrequency" dur="10s" values="0.02 0.04;0.04 0.02;0.02 0.04" repeatCount="indefinite" /></filter></svg>
