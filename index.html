@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,164 +8,208 @@
     <link rel="icon" href="profile_pic.png" />
 
     <link rel="stylesheet" href="locomotive.css" />
-    
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="media_queries.css" />
 
-<!-- For Water-ripple effect -->
+    <!-- For Water-ripple effect -->
 
     <!-- jQuery -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-<!-- jQuery Ripples Plugin -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js"></script>
+    <!-- jQuery Ripples Plugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js"></script>
+  </head>
 
-</head>
+  <body>
+    <!-- ///main Headder Nav Bar -->
 
-<body>
-    <div class="main">
-        <div class="FollowUpCircle"></div>
-        <div class="landingpage">
-            <div class="psudoheader"></div>
-            <div class="header1">
-                <h4 class="nav">
-                    <a href="#">omkar punjapwar</a>
-                </h4>
-                <div class="visibleme hideme">
-                    <ul class="ultop">
-                        <li><a id="hideUltop" href="#">Home</a></li>
-                        <li><a href="/Portfolio/MyProjects.html">Projects</a></li>
-                        <li><a href="/Portfolio/Experiance. html">experience</a></li>
-                        <li><a href="#contact" class="scroll-to-about">about</a></li>
-                        <li><a href="#"  id="contactNav" >contact</a></li>
-                    </ul>
-                </div>
- 
-                <h4 class="nav" id="menu">menu+</h4>
-            </div>
-            <div class="heroland">
-                <div class="textanimdiv">
-                    <h1 class="h1anim">Data</h1>
-                </div>
+    <div class="HeaderSection">
+      <!-- <div class="psudoheader"></div> -->
+      <div class="header1">
+        <h4 class="nav">
+          <a href="#">omkar punjapwar</a>
+        </h4>
+        <div class="visibleme hideme">
+          <ul class="ultop">
+            <li><a id="hideUltop" href="#">Home</a></li>
+            <li><a href="MyProjects.html">Projects</a></li>
+            <li><a href="myExperience.html">experience</a></li>
+            <li><a href="#contact" class="scroll-to-about">about</a></li>
+            <li><a href="#" id="contactNav">contact</a></li>
+          </ul>
+        </div>
 
-                <div class="combinetext">
-                    <div class="textanimdiv">
-                        <h1 class="h1anim">Analyst</h1>
-                    </div>
-                    <div class="animindia">
-                        <h4 class="movedown">based in india</h4>
-                    </div>
-                </div>
-                <div class="rightbottomtext">
-                    <div class="animindia">
-                        <h4 class="movedown">OPEN TO OPPORTUNITIES</h4>
-                    </div>
-                    <div class="animindia">
-                        <h4 class="movedown">AVAILABLE TO CONNECT</h4>
-                    </div>
-                </div>
-            </div>
-            <div class="footer1">
-                <a href="#">currently working at Tims <img src="images/right-arrowdiff.png" alt="#"></img>
-                </a>
-                <a href="#" id="club_text">
-                    codingblast club <img src="images/right-arrowdiff.png" alt="#"></img>
-                </a>
-                <div class="minicircles">
-                    <div class="circle">
-                        <img src="images/arrow-down.png" alt="#"></img>
-                    </div>
-                    <div class="circle">
-                        <img src="images/arrow-down.png" alt="#"></img>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="plugpage">
-            <a href="#">
-                <div class="plugdivs" id="plugDiv1">
-                    <h1>projects</h1>
-                    <img src="images/plug.png" alt="*img" />
-                    <h6>2022</h6>
-                </div>
-            </a>
-            <a href="#">
-                <div class="plugdivs" id="plugDiv2">
-                    <h1>experience</h1>
-                    <img src="images/ixperience.png" alt="*img" />
-                    <h6>2022</h6>
-                </div>
-            </a>
-            <a href="#">
-                <div class="plugdivs" id="plugDiv3">
-                    <h1>spirit work</h1>
-                    <img src="images/hudu.png" alt="*img" />
-                    <h6>2022</h6>
-                </div>
-            </a>
-        </div>
-        <div class="aboutpage" id="contact">
-            <div class="imgdiv">
-                <img src="images/profile_pic.png" alt="*img" />
-            </div>
-            <div class="textabout">
-                <h5>(about me)</h5>
-                <p> 
-                    I’m a data analyst who turns raw data into real decisions.
-                   With a problem-solver mindset and analytical thinking at my core, I help turn confusion into clarity — and numbers into next steps.
-                    From messy datasets to meaningful insights, I bring strategy, patterns, and practical solutions to the table.
-                   And yeah, I genuinely enjoy making sense of the chaos — it’s my kind of fun.
-                </p>
-                <a href="#">
-                    <h6 id="let'sTalk">let's talk</h6>
-                </a>
-            </div>
-        </div>
-        <div class="linkchannel">
-            <h5>( forgot to mention )</h5>
-            <a target="_blank" href="https://github.com/omkarpunjapwar">Here is my Github profile<img src="images/right-arrowdiff.png" alt="#"></img></a>
-        </div>
-        <div class="footer2">
-            <div class="left">
-                <h5>2022 &copy;</h5>
-                <div class="date">12:00pm</div>
-            </div>
-            <div class="right">
-                <ul class="ulbottom">
-                    <li><a target="_blank" href="https://www.linkedin.com/in/omkar-punjapwar">linkedin</a></li>
-                    <li><a target="_blank" href="https://x.com/home">twitter</a></li>
-                    <li><a target="_blank" href="images/My_resume.pdf">resume</a></li>
-                    
-                </ul>
-            </div>
-        </div>
-        
-
+        <h4 class="nav" id="menu">menu+</h4>
+      </div>
     </div>
 
-<div id="contactForm">
-    
+    <!-- ///main Headder Nav Bar ENDED HERE -->
+    <div class="ScrollContainer">
+      <!-- /// MAIN PAGE CONTENT -->
+      <div class="main">
+        <div class="FollowUpCircle"></div>
+        <div class="landingpage">
+          <div class="heroland">
+            <div class="textanimdiv">
+              <h1 class="h1anim">Data</h1>
+            </div>
 
-<form id="myForm" action="https://formspree.io/f/mldlovdz" method="POST">
-<div class="close-btn" id="closeFormBtn">close</div>
-  <label for="name">Name:</label>
-  <input type="text" name="name" required><br>
+            <div class="combinetext">
+              <div class="textanimdiv">
+                <h1 class="h1anim">Analyst</h1>
+              </div>
+              <div class="animindia">
+                <h4 class="movedown">based in india</h4>
+              </div>
+            </div>
+            <div class="rightbottomtext">
+              <div class="animindia">
+                <h4 class="movedown">OPEN TO OPPORTUNITIES</h4>
+              </div>
+              <div class="animindia">
+                <h4 class="movedown">AVAILABLE TO CONNECT</h4>
+              </div>
+            </div>
+          </div>
+          <div class="footer1">
+            <a href="#"
+              >currently working at Tims
+              <img src="images/right-arrowdiff.png" alt="#" />
+            </a>
+            <a href="#" id="club_text">
+              Leetcode dsa <img src="images/right-arrowdiff.png" alt="#" />
+            </a>
+            <div class="minicircles">
+              <div class="circle">
+                <img src="images/arrow-down.png" alt="#" />
+              </div>
+              <div class="circle">
+                <img src="images/arrow-down.png" alt="#" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="plugpage">
+          <a href="MyProjects.html">
+            <div class="plugdivs" id="plugDiv1">
+              <h1>projects</h1>
+              <img src="images/plug.png" alt="*img" />
+              <h6>2022</h6>
+            </div>
+          </a>
+          <a href="myExperience.html">
+            <div class="plugdivs" id="plugDiv2">
+              <h1>experience</h1>
+              <img src="images/ixperience.png" alt="*img" />
+              <h6>2022</h6>
+            </div>
+          </a>
+          <a href="#">
+            <div class="plugdivs" id="plugDiv3">
+              <h1>spirit work</h1>
+              <img src="images/hudu.png" alt="*img" />
+              <h6>2022</h6>
+            </div>
+          </a>
+        </div>
+        <div class="aboutpage" id="contact">
+          <div class="imgdiv">
+            <img src="images/profile_pic.png" alt="*img" />
+          </div>
+          <div class="textabout">
+            <h5>(about me)</h5>
+            <p>
+              I’m a data analyst who turns raw data into real decisions. With a
+              problem-solver mindset and analytical thinking at my core, I help
+              turn confusion into clarity — and numbers into next steps. From
+              messy datasets to meaningful insights, I bring strategy, patterns,
+              and practical solutions to the table. And yeah, I genuinely enjoy
+              making sense of the chaos — it’s my kind of fun.
+            </p>
+            <a href="#">
+              <h6 id="let'sTalk">let's talk</h6>
+            </a>
+          </div>
+        </div>
+        <div class="linkchannel">
+          <h5>( forgot to mention )</h5>
+          <a target="_blank" href="https://github.com/omkarpunjapwar"
+            >Here is my Github profile<img
+              src="images/right-arrowdiff.png"
+              alt="#"
+          /></a>
+        </div>
+      </div>
+      <!-- /// MAIN PAGE ENDED HERE -->
 
-  <label for="email">Email:</label>
-  <input type="email" name="email" required><br>
+      <!-- /// MAIN FOOTER  -->
+      <div class="footer2">
+        <div class="left">
+          <h5>2022 &copy;</h5>
+          <div class="date" id="date"></div>
+        </div>
+        <div class="right">
+          <ul class="ulbottom">
+             <li>
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/omkar-punjapwar"
+                >Kaggle</a
+              >
+            </li>
+            <li>
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/omkar-punjapwar"
+                >linkedin</a
+              >
+            </li>
+            <li><a target="_blank" href="https://x.com/home">x/twitter</a></li>
+            <li><a target="_blank" href="images/My_resume.pdf">resume</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- /// MAIN FOOTER ENDED HERE -->
+    </div>
+    <!-- /// CONTACT FORM -->
+    <div id="contactForm">
+      <form id="myForm" action="https://formspree.io/f/mldlovdz" method="POST">
+        <div class="close-btn" id="closeFormBtn">close</div>
+        <label for="name">Name:</label>
+        <input type="text" name="name" required /><br />
 
-  <label for="message">Message:</label>
-  <textarea name="message" required></textarea><br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" required /><br />
 
-  <button type="submit">Send Message</button>
-</form>
-</div>
+        <label for="message">Message:</label>
+        <textarea name="message" required></textarea><br />
 
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+    <!-- /// CONTACT FORM ENDED HERE -->
+
+    <!--for ripple effect--------------------  */ -->
+
+    <!-- <svg xmlns="http://www.w3.org/2000/svg" version="1.1"><filter id="water"><feTurbulence id="turbulence" baseFrequency="0.02 0.04" numOctaves="0.5" seed="2" /><feDisplacementMap in="SourceGraphic" scale="20" /><animate xlink:href="#turbulence" attributeName="baseFrequency" dur="10s" values="0.02 0.04;0.04 0.02;0.02 0.04" repeatCount="indefinite" /></filter></svg> -->
+
+    <!-- <svg xmlns="http://www.w3.org/2000/svg" version="1.1"><filter id="water"><feTurbulence id="turbulence" baseFrequency="0.02 0.04" numOctaves="0.5" seed="2" /><feDisplacementMap in="SourceGraphic" scale="10" /><animate xlink:href="#turbulence" attributeName="baseFrequency" dur="20s" values="0.02 0.04;0.04 0.02;0.02 0.04" repeatCount="indefinite" /></filter></svg> -->
+
+    <!--for ripple effect ended here--------------------  */ -->
+
+    <!-- /// INBUILD JS -->
 
     <!-- ----GSAP CDN---- -->
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"
-        integrity="sha256-78hcfrFBgZcXzaADNISoSxyJDROwLjVaL+x51CSyDno=" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"
+      integrity="sha256-78hcfrFBgZcXzaADNISoSxyJDROwLjVaL+x51CSyDno="
+      crossorigin="anonymous"
+    ></script>
 
     <!-- scrollTigger CDN -->
 
@@ -175,6 +218,7 @@
 
     <!-- ----COSTUME SCRIPT---- -->
     <script src="script.js"></script>
-</body>
 
+    <!-- /// INBUILD JS ENDED HERE -->
+  </body>
 </html>

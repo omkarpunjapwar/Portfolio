@@ -1,7 +1,8 @@
 const scroll = new LocomotiveScroll({
-  el: document.querySelector(".main"),
+  el: document.querySelector(".ScrollContainer"),
   smooth: true,
 });
+scroll.update();
 
 gsap.to(".h1anim", {
   y: 0,
@@ -84,6 +85,56 @@ function MouseFollower() {
   });
 }
 MouseFollower();
+// to distort on mouse move--------------------
+
+// const scrollContainer = document.querySelector(".ScrollContainer");
+// const waterAnimation = document.getElementById("water-animation");
+// let mouseMoveTimer;
+
+// // Function to stop the filter animation and freeze the current state
+// function freezeWater() {
+//   // 1. Pause the SVG animation (this freezes the ripple/turbulence pattern)
+//   if (waterAnimation) {
+//     waterAnimation.pauseAnimations();
+//   }
+
+//   // 2. Start a timer to fade out the *filter* after movement stops
+//   mouseMoveTimer = setTimeout(() => {
+//     scrollContainer.classList.remove("water-active");
+//   }, 500); // 500ms delay before the filter fades out
+// }
+
+// // Function to start the filter animation and apply the CSS filter
+// function activateWater() {
+//   // Clear any pending fade-out timer
+//   clearTimeout(mouseMoveTimer);
+
+//   // 1. Add the CSS class to apply the filter
+//   scrollContainer.classList.add("water-active");
+
+//   // 2. Play the SVG animation (this starts the ripple/turbulence movement)
+//   if (waterAnimation) {
+//     waterAnimation.unpauseAnimations();
+//   }
+// }
+
+// // EVENT LISTENERS on the Scroll Container
+// scrollContainer.addEventListener("mousemove", () => {
+//   // When the mouse moves, activate the filter and reset the pause timer
+//   activateWater();
+
+//   // Set a new timer to pause the animation if no movement is detected
+//   // If mouse doesn't move for 50ms, we call the freeze function
+//   clearTimeout(mouseMoveTimer);
+//   mouseMoveTimer = setTimeout(freezeWater, 50);
+// });
+
+// scrollContainer.addEventListener("mouseleave", () => {
+//   // When leaving the container, immediately start the fade-out process
+//   freezeWater();
+// });
+
+// distored logic ends here --------------------
 
 // image shower on hover
 
@@ -272,7 +323,7 @@ form.addEventListener("submit", function () {
 // Js for water-Ripple effect
 
 $(document).ready(function () {
-  $(".main").ripples({
+  $("body").ripples({
     // resolution: 512,     // Quality of ripple
     // dropRadius: 20,      // Radius of ripple in px
     // perturbance: 0.04,   // Wave distortion (lower = calmer water)
@@ -283,4 +334,36 @@ $(document).ready(function () {
   });
 });
 
+// Get the body element
+const bodyElement = document.body;
 
+// Function to apply the distortion when the mouse enters the body
+bodyElement.addEventListener("mouseenter", () => {
+  // Applying the filter distorts everything inside the body element
+  bodyElement.classList.add("distort");
+});
+
+// Function to remove the distortion when the mouse leaves the body
+// Note: 'mouseleave' on the body usually only fires if you move the cursor
+// completely outside the browser window. For a full-screen effect, 'mouseenter'
+// is the main trigger. You might consider using 'click' as the trigger
+// if you want to turn it on/off within the screen.
+bodyElement.addEventListener("mouseleave", () => {
+  // Remove the filter to return to normal
+  bodyElement.classList.remove("distort");
+});
+
+
+
+// script for date 
+function updateTime() {
+  const dateDiv = document.getElementById("date");
+  if (!dateDiv) return; // 🛑 if element not found, stop here (prevents error)
+  
+  const now = new Date();
+  const options = { hour: '2-digit', minute: '2-digit', hour12: true };
+  dateDiv.textContent = now.toLocaleTimeString('en-IN', options);
+}
+
+updateTime();
+setInterval(updateTime, 1000);

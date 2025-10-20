@@ -1,19 +1,34 @@
 * {
   padding: 0;
   margin: 0;
+
+  /* border: 1px solid red; */
 }
 
 body {
-  background: #000;
-}
-
-.main {
   color: white;
   background: #000;
-  padding: 0;
-  margin: 0;
   font-family: General Sans, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Helvetica Neue, Arial, sans-serif;
+  /* filter: url(#water); */
+}
+
+.ScrollContainer {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* .distort{
+  filter: url(#water);
+  transition: filter 0.5s ease-out;
+} */
+.main {
+  /* border: 1px solid red; */
+  /* background: #000; */
+  padding: 0;
+  margin: 0;
+
 }
 
 .FollowUpCircle {
@@ -53,15 +68,18 @@ body {
 }
 
 .psudoheader {
-  width: 100vw;
-  height: 2.5vh;
+  /* width: 100%; */
+  /* height: 13vh; */
   /* background: #000; */
+  display: none;
 }
 
 .header1 {
-  /* background: rgba(255, 0, 0, 0.358); */
-  width: 100vw;
+  background: rgba(28, 26, 26, 0);
+  backdrop-filter: blur(20px);
+  width: 100%;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   /* background: #000; */
@@ -78,6 +96,7 @@ body {
   justify-content: end;
   list-style-type: none;
   position: absolute;
+  text-transform: uppercase;
 }
 
 .visibleme {
@@ -152,7 +171,7 @@ body {
 
 .heroland {
   padding-left: 3vw;
-  margin-top: 20vh;
+  margin-top: 21vh;
 }
 
 .textanimdiv {
@@ -413,8 +432,14 @@ body {
   align-items: center;
   justify-content: space-between;
   text-transform: uppercase;
-  padding-top: 15vh;
-  padding-bottom: 2vh;
+  margin-top: 5em;
+  padding-bottom: 2vw;
+  /* border: 5px solid red; */
+  z-index: 999;
+}
+
+.PROFOOTER {
+  padding-bottom: 1em;
 }
 
 .footer2 h5 {
@@ -481,8 +506,8 @@ body {
 
 /* Form Box */
 #contactForm form {
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(15px);
+  background: rgba(255, 255, 255, 0.029);
+  backdrop-filter: blur(10px);
   border-radius: 15px;
   padding: 80px;
   min-width: 50%;
@@ -497,7 +522,7 @@ body {
 /* Form Elements */
 #contactForm form input,
 #contactForm form textarea {
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.047);
   color: white;
   border: none;
   padding: 10px;
@@ -508,16 +533,18 @@ body {
   outline: none;
 }
 
+#contactForm form input:focus,
+{
+
+
+}
+
 #contactForm form textarea {
   height: 10em;
   scrollbar-width: none;
   font-size: large;
 }
 
-/* #contactForm form input:focus,
-#contactForm form textarea:focus {
-
-} */
 
 /* Button */
 #contactForm form button {
@@ -548,8 +575,33 @@ body {
   z-index: 999;
 }
 
-.main {
-  filter: url(#water);
+
+
+/* CSS FOR PROJECT PAGE--------- */
+
+.canvas {
+  margin-top: 7em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1"><filter id="water"><feTurbulence id="turbulence" baseFrequency="0.02 0.04" numOctaves="3" seed="2" /><feDisplacementMap in="SourceGraphic" scale="20" /><animate xlink:href="#turbulence" attributeName="baseFrequency" dur="10s" values="0.02 0.04;0.04 0.02;0.02 0.04" repeatCount="indefinite" /></filter></svg>
+.ProHeading {
+  font-size: 6vw;
+  opacity: 70%;
+}
+
+.projects {
+  /* border: 2px solid red; */
+  width: 90%;
+  height: 40em;
+  border-radius: 20px;
+  object-fit: cover;
+  overflow: hidden;
+
+}
+
+.projects img {
+  width: 100%;
+}
