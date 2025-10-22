@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ME.portfolio</title>
+    <title>Omkar Punjapwar &#x2022; Portfolio</title>
     <link rel="icon" href="profile_pic.png" />
 
     <link rel="stylesheet" href="locomotive.css" />
@@ -26,6 +26,7 @@
   </head>
 
   <body>
+    <div class="overlay"></div>
     <!-- ///main Headder Nav Bar -->
 
     <div class="HeaderSection">
@@ -39,7 +40,7 @@
             <li><a id="hideUltop" href="#">Home</a></li>
             <li><a href="MyProjects.html">Projects</a></li>
             <li><a href="myExperience.html">experience</a></li>
-            <li><a href="#contact" class="scroll-to-about">about</a></li>
+            <li><a href="#About" class="scroll-to-about">about</a></li>
             <li><a href="#" id="contactNav">contact</a></li>
           </ul>
         </div>
@@ -52,7 +53,7 @@
     <div class="ScrollContainer">
       <!-- /// MAIN PAGE CONTENT -->
       <div class="main">
-        <div class="FollowUpCircle"></div>
+        <div class="FollowUpCircle"><img src="images/leaf.png" alt="" /></div>
         <div class="landingpage">
           <div class="heroland">
             <div class="textanimdiv">
@@ -109,7 +110,7 @@
               <h6>2022</h6>
             </div>
           </a>
-          <a href="#">
+          <a href="spiritWork.html">
             <div class="plugdivs" id="plugDiv3">
               <h1>spirit work</h1>
               <img src="images/hudu.png" alt="*img" />
@@ -117,7 +118,25 @@
             </div>
           </a>
         </div>
-        <div class="aboutpage" id="contact">
+        <!-- skill section -->
+        <div class="skills_div">
+          <h5>skills</h5>
+          <div id="skillbar">
+            <h1 class="scrolling-text">
+              Power BI &nbsp; | &nbsp; Excel &nbsp; | &nbsp; SQL &nbsp; | &nbsp;
+              PostgreSQL &nbsp; | &nbsp; Python (Pandas, NumPy, Matplotlib,
+              Seaborn) &nbsp; | &nbsp; Statistics &nbsp; | &nbsp; JavaScript
+              &nbsp; | &nbsp;Power BI &nbsp; | &nbsp; Excel &nbsp; | &nbsp; SQL
+              &nbsp; | &nbsp; PostgreSQL &nbsp; | &nbsp; Python (Pandas, NumPy,
+              Matplotlib, Seaborn) &nbsp; | &nbsp; Statistics &nbsp; | &nbsp;
+              JavaScript
+            </h1>
+          </div>
+        </div>
+
+        <!-- skill section ended here -->
+
+        <div class="aboutpage" id="About">
           <div class="imgdiv">
             <img src="images/profile_pic.png" alt="*img" />
           </div>
@@ -155,10 +174,8 @@
         </div>
         <div class="right">
           <ul class="ulbottom">
-             <li>
-              <a
-                target="_blank"
-                href="https://www.linkedin.com/in/omkar-punjapwar"
+            <li>
+              <a target="_blank" href="https://www.kaggle.com/omkarpunjapwar"
                 >Kaggle</a
               >
             </li>
@@ -178,20 +195,37 @@
     </div>
     <!-- /// CONTACT FORM -->
     <div id="contactForm">
-      <form id="myForm" action="https://formspree.io/f/mldlovdz" method="POST">
-        <div class="close-btn" id="closeFormBtn">close</div>
-        <label for="name">Name:</label>
-        <input type="text" name="name" required /><br />
+      <div id="contactCard">
+        <div class="contactImg">
+          <img src="images/black_water.gif" alt="img**" />
+        </div>
 
-        <label for="email">Email:</label>
-        <input type="email" name="email" required /><br />
+        <form
+          id="myForm"
+          action="https://formspree.io/f/mldlovdz"
+          method="POST"
+        >
+          <div class="close-btn" id="closeFormBtn">close</div>
+          <label for="name">Name:</label>
+          <input type="text" name="name" required /><br />
 
-        <label for="message">Message:</label>
-        <textarea name="message" required></textarea><br />
+          <label for="email">Email:</label>
+          <input type="email" name="email" required /><br />
 
-        <button type="submit">Send Message</button>
-      </form>
+          <label for="message">Message:</label>
+          <textarea name="message" required></textarea><br />
+
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
     </div>
+    <!-- thank you message for form submision-->
+
+    <div id="successMessage" class="thank-you-popup">
+      <p>Thank you for your message! I'll be in touch soon. 👋</p>
+    </div>
+
+    <!-- thank you msg ended here -->
     <!-- /// CONTACT FORM ENDED HERE -->
 
     <!--for ripple effect--------------------  */ -->

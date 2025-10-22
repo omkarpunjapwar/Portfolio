@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ME.portfolio</title>
+    <title>Omkar Punjapwar &#x2022; Portfolio</title>
     <link rel="icon" href="profile_pic.png" />
 
     <link rel="stylesheet" href="locomotive.css" />
@@ -26,6 +26,7 @@
   </head>
 
   <body>
+    <div class="overlay2"></div>
     <!-- ///main Headder Nav Bar -->
 
     <div class="HeaderSection">
@@ -38,8 +39,7 @@
           <ul class="ultop">
             <li><a id="hideUltop" href="index.html">Home</a></li>
             <li><a href="MyProjects.html">Projects</a></li>
-            <li><a href="myExperience.html">experience</a></li>
-            <li><a href="index.html" class="scroll-to-about">about</a></li>
+            <li><a href="#">experience</a></li>
             <li><a href="#" id="contactNav">contact</a></li>
           </ul>
         </div>
@@ -52,8 +52,12 @@
     <div class="ScrollContainer">
       <!-- /// MAIN PAGE CONTENT -->
       <div class="main">
-        <h1> # Data analyst I at TIMS </h1>
-       
+        <div class="FollowUpCircle"><img src="images/leaf.png" alt="" /></div>
+        <div class="canvas">
+          <h1 class="ProHeading">1 Year of Turning Data into Decisions</h1>
+          <div class="projects">
+            <img src="images/black_water.gif" alt="**" />
+          </div>
         </div>
       </div>
       <!-- /// MAIN FOOTER  -->
@@ -64,10 +68,8 @@
         </div>
         <div class="right">
           <ul class="ulbottom">
-             <li>
-              <a
-                target="_blank"
-                href="https://www.linkedin.com/in/omkar-punjapwar"
+            <li>
+              <a target="_blank" href="https://www.kaggle.com/omkarpunjapwar"
                 >Kaggle</a
               >
             </li>
@@ -85,22 +87,39 @@
       </div>
       <!-- /// MAIN FOOTER ENDED HERE -->
     </div>
-    <!-- /// CONTACT FORM -->
+   <!-- /// CONTACT FORM -->
     <div id="contactForm">
-      <form id="myForm" action="https://formspree.io/f/mldlovdz" method="POST">
-        <div class="close-btn" id="closeFormBtn">close</div>
-        <label for="name">Name:</label>
-        <input type="text" name="name" required /><br />
+      <div id="contactCard">
+        <div class="contactImg">
+          <img src="images/black_water.gif" alt="img**" />
+        </div>
 
-        <label for="email">Email:</label>
-        <input type="email" name="email" required /><br />
+        <form
+          id="myForm"
+          action="https://formspree.io/f/mldlovdz"
+          method="POST"
+        >
+          <div class="close-btn" id="closeFormBtn">close</div>
+          <label for="name">Name:</label>
+          <input type="text" name="name" required /><br />
 
-        <label for="message">Message:</label>
-        <textarea name="message" required></textarea><br />
+          <label for="email">Email:</label>
+          <input type="email" name="email" required /><br />
 
-        <button type="submit">Send Message</button>
-      </form>
+          <label for="message">Message:</label>
+          <textarea name="message" required></textarea><br />
+
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
     </div>
+      <!-- thank you message for form submision-->
+
+    <div id="successMessage" class="thank-you-popup">
+      <p>Thank you for your message! I'll be in touch soon. 👋</p>
+    </div>
+
+    <!-- thank you msg ended here -->
     <!-- /// CONTACT FORM ENDED HERE -->
 
     <!--for ripple effect--------------------  */ -->

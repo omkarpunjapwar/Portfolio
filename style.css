@@ -13,10 +13,49 @@ body {
   /* filter: url(#water); */
 }
 
+/* css to make page transitioon smoot */
+.overlay {
+  width: 100%;
+  height: 100%;
+  background: #000;
+  position: fixed;
+  z-index: 999;
+  transform: translateY(-100%)
+}
+
+.overlay2 {
+  width: 100%;
+  height: 100%;
+  background: #000;
+  position: fixed;
+  z-index: 999;
+  transform: translateY(0%)
+}
+
+.overlay3 {
+  width: 100%;
+  height: 100%;
+  background: #000;
+  position: fixed;
+  z-index: 999;
+  transform: translateY(0%)
+}
+
+.overlay4 {
+  width: 100%;
+  height: 100%;
+  background: #000;
+  position: fixed;
+  z-index: 999;
+  transform: translateY(0%)
+}
+
+
 .ScrollContainer {
   height: 100%;
   display: flex;
   flex-direction: column;
+  min-height: calc(100vh + 1px);
 }
 
 /* .distort{
@@ -29,26 +68,28 @@ body {
   padding: 0;
   margin: 0;
 
+  /* overflow: hidden; */
 }
 
 .FollowUpCircle {
   opacity: 100%;
   position: absolute;
-  z-index: 100;
-  color: #000;
+  z-index: -1;
   width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background: white;
   transition: all 0.1s ease-out;
   visibility: hidden;
   transform: var(--circle);
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.5vw;
-  mix-blend-mode: difference;
-  /* Use the custom property */
+  /* font-size: 1.5vw; */
+  /* mix-blend-mode: difference; */
+
+}
+
+.FollowUpCircle img {
+  width: 30px;
+
 }
 
 ::selection {
@@ -90,7 +131,7 @@ body {
 }
 
 .ultop {
-  width: 100vw;
+  /* width: 100vw; */
   display: flex;
   align-items: center;
   justify-content: end;
@@ -301,6 +342,7 @@ body {
   margin-left: 3vw;
   border-top: 2px solid grey;
   text-transform: uppercase;
+  position: relative;
 }
 
 .plugdivs h1 {
@@ -320,20 +362,61 @@ body {
 }
 
 .plugdivs img {
-  width: 35vw;
+  width: 30vw;
   position: absolute;
-  visibility: hidden;
+  /* visibility: hidden; */
   z-index: 2;
   border-radius: 5%;
   transition: transform 0.3s ease;
+  pointer-events: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
 }
 
+/* skills section  */
+.skills_div {
+  margin-top: 8em;
+  /* transition: transform 0.3s ease; */
+  text-transform: uppercase;
+}
+
+.skills_div h5 {
+  text-transform: uppercase;
+  margin-left: 3vw;
+  margin-bottom: 1em;
+}
+
+#skillbar {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 3em;
+  border: 2px solid grey;
+  border-left: none;
+  border-right: none;
+  transform: translateZ(0);
+}
+
+
+
+.scrolling-text {
+  opacity: 70%;
+  display: inline-block;
+  will-change: transform;
+  white-space: nowrap;
+}
+
+
+/* skills section ended here */
+/* about page started */
 .aboutpage {
   width: 100vw;
   /* background: #000; */
   /* padding-top: 20vw;
   padding-bottom: 10vw; */
-  margin-top: 15em;
+  margin-top: 12em;
   margin-bottom: 6em;
   display: flex;
   justify-content: center;
@@ -366,7 +449,7 @@ body {
 }
 
 .textabout p {
-  font-size: 0.8em;
+  font-size: 1em;
   line-height: 2;
 }
 
@@ -435,7 +518,7 @@ body {
   margin-top: 5em;
   padding-bottom: 2vw;
   /* border: 5px solid red; */
-  z-index: 999;
+  /* z-index: 999; */
 }
 
 .PROFOOTER {
@@ -477,11 +560,10 @@ body {
   padding: 0 2vw;
 }
 
-/* contact form  */
+/* contact form  starts here---------*/
 
 /* Outer blur background */
 #contactForm {
-
   position: fixed;
   top: 0;
   left: 0;
@@ -489,14 +571,35 @@ body {
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(20px);
-  display: flex;
   justify-content: center;
   align-items: center;
   z-index: 6;
   display: none;
   /* hide it initially */
   opacity: 0;
-  transition: opacity 0.5s ease;
+  transition: opacity 0.6s ease-in-out;
+}
+
+#contactCard {
+  width: 60vw;
+  border: 2px solid rgba(215, 212, 212, 0.193);
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+}
+
+.contactImg {
+  /* border: 3px solid red; */
+  width: 30vw;
+  height: 29.5em;
+  overflow: hidden;
+  /* object-fit: cover; */
+}
+
+.contactImg img {
+  width: 30.5vw;
 }
 
 #contactForm.show {
@@ -506,23 +609,26 @@ body {
 
 /* Form Box */
 #contactForm form {
+  /* border: 3px solid red; */
   background: rgba(255, 255, 255, 0.029);
   backdrop-filter: blur(10px);
   border-radius: 15px;
-  padding: 80px;
-  min-width: 50%;
+  padding: 60px;
+  min-width: 40%;
+  height: 22em;
   color: white;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 5px;
   font-family: 'Poppins', sans-serif;
-  position: fixed;
+  /* position: fixed; */
 }
 
 /* Form Elements */
 #contactForm form input,
 #contactForm form textarea {
-  background: rgba(255, 255, 255, 0.047);
+  /* background: rgba(255, 255, 255, 0.047); */
+  background: rgba(165, 164, 164, 0.133);
   color: white;
   border: none;
   padding: 10px;
@@ -533,11 +639,6 @@ body {
   outline: none;
 }
 
-#contactForm form input:focus,
-{
-
-
-}
 
 #contactForm form textarea {
   height: 10em;
@@ -575,6 +676,24 @@ body {
   z-index: 999;
 }
 
+.thank-you-popup {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10000;
+  padding: 30px 40px;
+  background-color: #fff;
+  color: #000;
+  /* Black text */
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+/* contact form end here------------- */
 
 
 /* CSS FOR PROJECT PAGE--------- */
@@ -590,6 +709,8 @@ body {
 .ProHeading {
   font-size: 6vw;
   opacity: 70%;
+  margin-left: 3vw;
+  text-transform: uppercase;
 }
 
 .projects {
@@ -605,3 +726,7 @@ body {
 .projects img {
   width: 100%;
 }
+
+/* experiance page CSS */
+
+/* style.css (Near your .plugdivs or .projects CSS) */
