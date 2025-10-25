@@ -373,7 +373,11 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   opacity: 0;
+  /* border: 2px solid red; */
 }
+/* #exIMG{
+  width: 25vw;
+} */
 
 /* skills section  */
 .skills_div {

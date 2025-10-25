@@ -244,7 +244,7 @@ function imageFollow() {
         const mouseX = chai.clientX - divRect.left;
         const mouseY = chai.clientY - divRect.top;
 
-        const targetX = mouseX - 900;
+        const targetX = mouseX - 850;
 
         const centerOffsetY = mouseY - divRect.height / 2;
 
@@ -392,8 +392,8 @@ function showContactForm() {
                         visibility: 'hidden',
                         scale: 0.8,
                         pointerEvents: 'none',
-                        duration: 0.7,
-                        delay: 5, // Display for 3 seconds
+                        duration: 0.8,
+                        delay: 4, // Display for 3 seconds
                         ease: "power2.in"
                     });
                 } else {
