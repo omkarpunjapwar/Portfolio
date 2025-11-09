@@ -1,13 +1,67 @@
 /* This css is for responsiveness */
 
 @media (max-width: 600px) {
+  * {
+    border: 2px solid red;
+    padding: 0;
+    margin: 0;
+    scale: 1;
+    overflow-x: hidden;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .header1 {
+    width: 100%;
+
+  }
+
+  .HeaderSection {
+    width: 100%;
+
+  }
+
+  .overlay {
+    width: 100%;
+
+  }
+
+  .landingpage {
+
+    width: 100%;
+
+
+  }
+
+  .plugpage {
+    width: 100%;
+  }
+
+  .aboutpage {
+    width: 100%;
+
+  }
+
+  .linkchannel {
+    width: 100%;
+
+  }
+
+  .footer2 {
+    /* background: #000; */
+    width: 100%;
+
+  }
+
   .FollowUpCircle {
     display: none;
   }
 
   .ultop {
-    width: 80vw;
-    margin-top: 0.3em;
+    width: 80%;
+    margin-top: 1em;
   }
 
   .ultop li {

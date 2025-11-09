@@ -586,7 +586,7 @@ body {
 
 #contactCard {
   width: 60vw;
-  border: 2px solid rgba(215, 212, 212, 0.193);
+  border: 1.5px solid rgba(215, 212, 212, 0.193);
   border-radius: 20px;
   display: flex;
   justify-content: space-around;
@@ -655,7 +655,7 @@ body {
 #contactForm form button {
   padding: 10px;
   background: transparent;
-  border: 1px solid white;
+  border: 1px solid rgba(255, 255, 255, 0.364);
   color: white;
   border-radius: 8px;
   cursor: pointer;
