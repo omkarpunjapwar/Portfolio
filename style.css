@@ -376,9 +376,15 @@ body {
   /* border: 2px solid red; */
 }
 
-/* #exIMG{
-  width: 25vw;
-} */
+#exIMG {
+  height: 20em;
+  width: 22em;
+  padding: 2em;
+  background-color: #262525;
+}
+#spiritImg{
+  width: 22em;
+}
 
 /* skills section  */
 .skills_div {
@@ -807,13 +813,14 @@ body {
   font-size: 1.5em;
 
 }
-.breif3{
+
+.breif3 {
   padding-bottom: 6em;
 }
 
 .breif3 h4 {
   font-size: 4em;
- 
+
   margin-right: 3vw;
 }
 
