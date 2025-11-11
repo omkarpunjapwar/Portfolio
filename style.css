@@ -375,6 +375,7 @@ body {
   opacity: 0;
   /* border: 2px solid red; */
 }
+
 /* #exIMG{
   width: 25vw;
 } */
@@ -732,5 +733,92 @@ body {
 }
 
 /* experiance page CSS */
+
+.experience_Brief {
+  /* border: 2px solid red; */
+  margin-left: 3vw;
+  margin-top: 3em;
+}
+
+.experience_Brief p {
+  opacity: 50%;
+  font-size: 1.5vw;
+  width: 100%;
+  /* visibility: hidden; */
+}
+
+.companyinfo {
+  display: flex;
+  margin-top: 3em;
+  /* border: 1px solid red; */
+}
+
+.company_logo {
+  margin-top: 3em;
+  /* border: 1px solid red; */
+}
+
+.company_logo img {
+  width: 20vw;
+  /* border: 1px solid red; */
+}
+
+.infoText {
+  margin-top: 3em;
+  margin-left: 20em;
+  /* border: 1px solid red; */
+  opacity: 70%;
+}
+
+.infoText h4 {
+  opacity: 50%;
+  margin-top: 0.5em;
+}
+
+.infoText P {
+  opacity: 50%;
+  font-size: 1em;
+  width: 90%;
+  margin-top: 0.5em;
+}
+
+#ABOUT_ORG {
+  opacity: 100%;
+}
+
+.my_exBrief {
+  margin-top: 6em;
+  opacity: 70%;
+}
+
+.my_exBrief p {
+  opacity: 50%;
+  font-size: 1em;
+  width: 95%;
+  margin-top: 0.5em;
+}
+
+.breif2 h4 {
+  font-size: 4em;
+
+}
+
+.breif2 p {
+  font-size: 1.5em;
+
+}
+.breif3{
+  padding-bottom: 6em;
+}
+
+.breif3 h4 {
+  font-size: 4em;
+ 
+  margin-right: 3vw;
+}
+
+.breif3 p {
+  font-size: 1.5em;
+}
 
 /* style.css (Near your .plugdivs or .projects CSS) */
