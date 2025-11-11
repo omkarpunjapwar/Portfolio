@@ -5,6 +5,10 @@
   /* border: 1px solid red; */
 }
 
+.tempOverlayMobile {
+  display: none;
+}
+
 body {
   color: white;
   background: #000;
@@ -22,6 +26,7 @@ body {
   z-index: 999;
   transform: translateY(-100%)
 }
+
 
 .overlay2 {
   width: 100%;
@@ -382,7 +387,8 @@ body {
   padding: 2em;
   background-color: #262525;
 }
-#spiritImg{
+
+#spiritImg {
   width: 22em;
 }
 
