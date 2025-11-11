@@ -244,7 +244,7 @@ function imageFollow() {
         const mouseX = chai.clientX - divRect.left;
         const mouseY = chai.clientY - divRect.top;
 
-        const targetX = mouseX - 850;
+        const targetX = mouseX - 700;
 
         const centerOffsetY = mouseY - divRect.height / 2;
 
